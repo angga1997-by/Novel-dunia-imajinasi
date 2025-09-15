@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dunia Imajinasi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-content">
+      <h1 class="loader-text">Dunia Imajinasi</h1>
+      <p class="loader-sub">Tempat Cerita Hidup ✨</p>
+    </div>
+    <audio id="loader-sound" src="sounds/ting.mp3" preload="auto"></audio>
+  </div>
+  <header>
+    <h1>📚 Dunia Imajinasi</h1>
+    <p>Tempat membaca novel modern dengan nuansa mewah</p>
+    <a href="#novel" class="btn-glow">Mulai Jelajah</a>
+  </header>
+  <section id="novel">
+    <h2>Daftar Novel Unggulan</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="images/cover1.jpg" alt="Novel 1">
+        <h3>Bayangan Senja</h3>
+        <p>Kisah cinta dan misteri yang terjalin di balik indahnya langit senja.</p>
+        <a href="novel1.html" class="btn">Baca</a>
+      </div>
+      <div class="card">
+        <img src="images/cover2.jpg" alt="Novel 2">
+        <h3>Jejak Rahasia</h3>
+        <p>Perjalanan seorang detektif mengungkap rahasia kelam kota tua.</p>
+        <a href="novel2.html" class="btn">Baca</a>
+      </div>
+      <div class="card">
+        <img src="images/cover3.jpg" alt="Novel 3">
+        <h3>Cinta di Balik Awan</h3>
+        <p>Romansa elegan yang terjalin di antara mimpi dan kenyataan.</p>
+        <a href="novel3.html" class="btn">Baca</a>
+      </div>
+    </div>
+  </section>
+  <footer><p>&copy; 2025 Dunia Imajinasi. Semua Hak Dilindungi.</p></footer>
+  <script>
+    window.addEventListener("load",()=>{
+      const loader=document.getElementById("loader");
+      const sound=document.getElementById("loader-sound");sound.play();
+      setTimeout(()=>{loader.style.display="none";},3000);
+    });
+  </script>
+</body>
+</html>
